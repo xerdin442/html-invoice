@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+
+    <style>
+      .invoice-box {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+        max-height: max-content;
+        box-shadow: 0px 4px 8px gray, 0 6px 20px gray;
+      }
+      .logo-text {
+        color: orangered;
+      }
+      .logo {
+        display: block;
+        text-align: left;
+        font-size: 35px;
+        padding-top: 40px;
+      }
+      .contact,
+      .price,
+      .items td:nth-child(2) {
+        text-align: right;
+      }
+      table {
+        width: 100%;
+        border-spacing: 0;
+      }
+      .info {
+        margin-top: 35px;
+        margin-bottom: 15px;
+      }
+      .desc {
+        width: 80%;
+        text-align: left;
+      }
+      .items th {
+        border-bottom: 2px solid gray;
+      }
+      .items td {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid gray;
+      }
+      .items {
+        margin-bottom: 50px;
+      }
+      .total {
+        border-bottom: 2px solid gray !important;
+        border-top: 2px solid gray !important;
+      }
+      .terms {
+        border-bottom: none !important;
+        padding: none !important;
+        text-align: center;
+        font-size: x-small;
+      }
+      .heart {
+        color: orangered;
+        font-size: 20px;
+      }
+      footer {
+        margin-top: 130px;
+        margin-bottom: 15px;
+        border-left: 3px solid orangered;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="invoice-box">
+      <h1 class="logo"><span class="logo-text">Xerdin</span>LUDAC</h1>
+      <br />
+
+      <table class="info">
+        <tr>
+          <td>
+            <small><strong>ISSUED TO:</strong></small>
+            <h2>[Client/Company Name]</h2>
+            <p>
+              Invoice Date: <strong>28-05-2023</strong>
+              <br />
+              Invoice Number: <strong>000312</strong>
+              <br />
+              Payment Method: <strong>Wire Transfer</strong>
+            </p>
+          </td>
+          <td class="contact">
+            <small><strong>ISSUED BY:</strong></small>
+            <h2>XerdinLudac Inc.</h2>
+            <p>
+              Bishop Nwabunne Street<br />
+              Amachai Quarters, Ugbolu<br />
+              Delta State.
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <table class="items">
+        <tr>
+          <th class="desc"><strong>DESCRIPTION</strong></th>
+          <th class="price"><strong>PRICE</strong></th>
+        </tr>
+        <tr>
+          <td>Website Design</td>
+          <td>$750.00</td>
+        </tr>
+        <tr>
+          <td>Hosting (1 year)</td>
+          <td>$95.00</td>
+        </tr>
+        <tr>
+          <td>Domain name (1 year)</td>
+          <td>$10.00</td>
+        </tr>
+        <tr>
+          <td>Maintenance (Quarterly)</td>
+          <td>$300.00</td>
+        </tr>
+        <tr>
+          <td class="total"><strong>TOTAL DUE</strong></td>
+          <td class="total"><strong>$1155.00</strong></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="terms">
+            <p>
+              <strong
+                >A finance charge of 1.5% will be made on unpaid balances after
+                30days.</strong
+              >
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <h3>Thank you!<span class="heart">&#10084;</span></h3>
+
+      <footer>
+        <small>
+          <strong>PHONE: </strong>(+234)-901-234-5678<br />
+          <strong>E-MAIL: </strong>xerdinludac@example.com
+        </small>
+      </footer>
+    </div>
+  </body>
 </html>
