@@ -8,5 +8,5 @@ An image preview of the invoice is available below:
 
 <img width="296" alt="Invoice" src="https://github.com/xerdin442/html-invoice/assets/110817844/03caf730-3dc8-4bbc-9ad8-0a9e62fe6a74">
 
-Thanks for stopping by. Give me a star if you like it.
+Thanks for stopping by. Give me a star if you like this repo.
 Clone to your machine and have fun with it!
